@@ -3,7 +3,7 @@ layout: project
 title: Torque Wrench Design and Ansys FEM
 description: Designed a torque wrench and chose a suitable material based on analytical calculations. Created a CAD model of the wrench and used Ansys to perform a FEM of the wrench under torque.
 technologies: [Autodesk Fusion, Ansys, Matlab]
-image: ({{ "/assets/images/Wrench-FEM-Deformation.png" | relative_url }})
+image: {{ "/assets/images/Wrench-FEM-Deformation.png" | relative_url }}
 ---
 
 For a class, I was tasked with designing a torque-wrench to meet certain specifications at a given maximum torque. I iterated using analytical calculations to find the necessary material and wrench dimensions to satisfy my specifications, and then I used CAD software to create a model of my chosen design. Using Ansys, I performed an FEM analysis of my design with the given applied force, applying boundary conditions and carefully analyzing and recording the results with several material metrics. By comparing the results of my FEM analysis to the results of my hand calculations, I gained an understanding of the limits of hand calculations, as well as the use cases of FEM analysis. Finally, I performed several mesh refinement studies to look at the impact of mesh size on the results of the FEM analysis.
