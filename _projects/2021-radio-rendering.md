@@ -10,28 +10,28 @@ For a class, I was tasked with designing a torque-wrench to meet certain specifi
 
 A look at the CAD model I designed. It is a fairly simplistic model, lacking complex geometry and contours that would be present on an actual wrench, however this enabled me to readily perform hand calculations of the design.
 
-![CAD Model]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-CAD-Model.png' | relative_url }})
+![CAD Model]('/portfolio-Kyle-Dattner/assets/images/Wrench-CAD-Model.png')
 
 The material used in my wrench design is an aluminum alloy, Aluminum 7010-T7451. Material selection was done iteratively, looking at several different families of alloys and narrowing down possibilities using material properties. The aluminum alloy chosen is ideal for several reasons. It has a fairly high yield strength relative to other aluminum alloys, allowing us to achieve the desired safety factor for yield. However, its Young's Modulus is at a reasonable 10.5e3 ksi, which allows larger deformation and the strain gauge placed on the wrench to achieve the minimum required output. Finally, the fracture toughness and fatigue strength are high enough to achieve the desired safety factors respectively.
 
 The load was applied distributively over the end surface over the wrench, using F = M/L to calculate the necessary magnitude to achieve the desired moment. Boundary conditions were imposed to dictate no rotation at the wrench drive.
 
-![Load and Boundary Conditions]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-Boundary-Condition-Analysis.png' | relative_url }})
+![Load and Boundary Conditions]('/portfolio-Kyle-Dattner/assets/images/Wrench-Boundary-Condition-Analysis.png')
 
 Normal strain contours are shown here:
 
-![Normal Strain Contours]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Normal-Strain.png' | relative_url }})
+![Normal Strain Contours]('/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Normal-Strain.png')
 
 Maximum principle stress contours are shown here:
 
-![Max Principal Stress Contours]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Maximum-Principal-Principal-Stress-Contours.png' | relative_url }})
+![Max Principal Stress Contours]('/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Maximum-Principal-Principal-Stress-Contours.png')
 
 Maximum normal stress contours are shown here, with the maximum normal stress occurring at stress concentration locations on and at the base of the wrench drive:
 
-![Max Normal Stress Contours]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Normal-Stress.png' | relative_url }})
+![Max Normal Stress Contours]('/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Normal-Stress.png')
 
 Load point deflection is shown here, with greatest deflection occurring on the end where the load is applied, as expected:
 
-![Load Point Deflection]({{ '/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Deformation.png' | relative_url }})
+![Load Point Deflection]('/portfolio-Kyle-Dattner/assets/images/Wrench-FEM-Deformation.png')
 
 I chose the SGD-1.5/120-LY11 strain gauge from Omega Engineering. It is a linear strain gauge with a size of 4.7mm, which will fit within the area of the wrench where it will be placed. The strain at the gauge ends up being very similar to the results of my hand calculations, with a strain of 0.001, which corresponds to 1.039 mV/V.
