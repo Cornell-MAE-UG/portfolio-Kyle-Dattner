@@ -16,7 +16,7 @@ The material used in my wrench design is an aluminum alloy, Aluminum 7010-T7451.
 
 The load was applied distributively over the end surface over the wrench, using F = M/L to calculate the necessary magnitude to achieve the desired moment. Boundary conditions were imposed to dictate no rotation at the wrench drive.
 
-![Load and Boundary Conditions]{{ "/assets/images/Wrench-Boundary-Condition-Analysis.png" | relative_url }}
+![Load and Boundary Conditions]({{ "/assets/images/Wrench-Boundary-Condition-Analysis.png" | relative_url }})
 
 Normal strain contours are shown here:
 
